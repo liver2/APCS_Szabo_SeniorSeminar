@@ -1,95 +1,75 @@
-Time,Pick Order,email22,name,session1,session2,session3,session4,session5
-12/4/18 10:32:10,1,phillipsc,Catherine M. Phillips,13,14,4,11,16
-12/5/18 13:00:09,2,lylem,Harrison (Miller) Lyle,7,1,2,6,18
-12/5/18 13:01:51,3,pfisterm,Grace (Morgan) Pfister,15,14,11,1,16
-12/5/18 13:02:16,4,chandrakru,Ruben Chandrakumar,5,2,11,3,15
-12/5/18 13:02:23,5,buechlyt,Anthony Jacob (Tony) Buechly,2,5,16,3,15
-12/5/18 13:02:38,6,taylors,Samuel Taylor,8,14,17,18,2
-12/5/18 13:02:41,7,fatuzzos,Stephen Holden Fatuzzo,1,9,16,7,2
-12/5/18 13:04:06,8,kellara,Ava Kellar,16,11,2,1,3
-12/5/18 13:07:00,9,kerschnee,Eric William Kerschner,9,18,2,13,6
-12/5/18 13:08:18,10,rame,Emily Marie Ram,2,15,3,1,18
-12/5/18 13:09:15,11,sullivanj,Jack Michael Kestner Sullivan,1,16,7,8,6
-12/5/18 13:10:23,12,yardleyo,Olivia Audrey Yardley,15,10,1,9,2
-12/5/18 13:11:20,13,boazk,Kayla M. Boaz,15,18,6,10,2
-12/5/18 13:12:02,14,thompsond,Dylan Niles Thompson,3,2,7,10,4
-12/5/18 13:12:03,15,valenk,Katherine Rhea Valen,15,1,7,9,2
-12/5/18 13:12:10,16,midham,Manav Dev Midha,2,12,6,16,15
-12/5/18 13:12:55,17,briggsm,Molly Molloy Briggs,15,10,1,18,16
-12/5/18 13:13:00,18,alberth,Herschel Morris Albert,1,12,3,2,9
-12/5/18 13:13:02,19,brants,Samantha Rose Brant,8,10,1,15,16
-12/5/18 13:13:03,20,zalantsv,Valen Irene Zalants,15,1,7,9,2
-12/5/18 13:13:05,21,shihn,Nellie Yushuan Shih,8,7,1,15,14
-12/5/18 13:13:14,22,webbc,Chloe Renee Webb,15,1,9,11,6
-12/5/18 13:13:38,23,williamsb,Bryon Michael Williamson,8,14,2,16,6
-12/5/18 13:13:44,24,wrightm,Margaret Langdon (Maggie) Wright,15,1,7,9,2
-12/5/18 13:13:46,25,reiringj,Jane (Janie) Reiring,15,1,7,9,2
-12/5/18 13:13:47,26,kellert,Victoria Louise (Tori) Keller,15,6,1,17,16
-12/5/18 13:14:09,27,stewarts,Sean Christopher Stewart,9,16,14,8,18
-12/5/18 13:14:31,28,farrelll,Lily Taylor Farrell,1,3,2,10,11
-12/5/18 13:14:51,29,westonf,Frank Weston,15,5,13,16,6
-12/5/18 13:14:54,30,hessh,Hannah Rose Hess,15,1,7,9,2
-12/5/18 13:15:16,31,snellst,Sterling Elijah Snell,9,15,13,1,16
-12/5/18 13:15:19,32,folanm,Maxwell Richard Folan,7,15,12,5,1
-12/5/18 13:15:22,33,hartenm,Mary C. Harten,1,15,10,18,2
-12/5/18 13:15:23,34,lutzm,Mia E. Lutz,15,1,7,9,16
-12/5/18 13:15:23,35,puckettt,Trevor B. Puckett,18,16,1,8,7
-12/5/18 13:15:25,36,rennerj,Jacob Renner,1,3,2,16,18
-12/5/18 13:15:32,37,settersk,Katelynn Renee Setters,1,3,2,9,11
-12/5/18 13:15:58,38,kovachh,Helen Kovach,1,18,15,16,6
-12/5/18 13:15:58,39,hoffmanl,Lindsey Renee Hoffman,15,1,9,7,14
-12/5/18 13:16:14,40,jeffriese,Ethan Mikal Jeffries,11,3,2,7,16
-12/5/18 13:16:14,41,goingsc,William (Chase) Goings,13,7,16,1,2
-12/5/18 13:16:16,42,straleyg,Grace Virginia Straley,7,1,16,6,15
-12/5/18 13:16:21,43,bakers,Sydney Renee Baker,15,1,8,6,14
-12/5/18 13:16:41,44,jaccacis,Samuel A. (Sam) Jaccaci,11,7,1,15,16
-12/5/18 13:16:43,45,gonzalese,Emily Susan Gonzales,7,1,6,15,16
-12/5/18 13:16:50,46,fleischme,Eric Robert Fleischmann,7,9,5,18,17
-12/5/18 13:16:59,47,taylorhu,Hunter Levi Taylor,2,7,3,15,1
-12/5/18 13:17:13,48,formana,Annabel August Forman,1,16,15,7,17
-12/5/18 13:17:13,49,maggarda,Abigail Maye (Abby) Maggard,15,1,9,7,17
-12/5/18 13:17:45,50,cercekg,Gavin L. Cercek,8,1,14,12,9
-12/5/18 13:18:09,51,mcneile,Emma Rachael McNeil,9,13,7,1,2
-12/5/18 13:18:12,52,hettingep,Paige E. Hettinger,9,1,10,2,6
-12/5/18 13:18:22,53,paynej,Joshua Jabez (Josh) Payne,8,2,13,14,18
-12/5/18 13:18:59,54,cordean,Nicholas William (Nick) Cordea,2,15,1,16,7
-12/5/18 13:19:35,55,hatcherm,Moseley Quinn (Mose) Hatcher,7,2,13,17,14
-12/5/18 13:19:48,56,smithn,Genevieve Claire (Nevie) Smith,15,1,2,6,7
-12/5/18 13:19:54,57,ellerj,Jeremy Eller,8,2,16,7,15
-12/5/18 13:19:59,58,mangur,Radha Venkata Mangu,7,2,16,15,18
-12/5/18 13:20:25,59,gersonn,Nathaniel Whitney (Nate) Gerson,6,15,16,2,1
-12/5/18 13:20:30,60,osborna,Andrew Pendleton (Andy) Osborn,2,9,1,12,15
-12/5/18 13:20:31,61,nguyenn,Nicholas Minh (Nick) Nguyen,3,10,7,2,1
-12/5/18 13:21:44,62,bursef,Francis Burse,2,3,9,7,16
-12/5/18 13:23:02,63,hamalla,Alec Daniel Hamall,6,9,1,15,2
-12/5/18 13:23:46,64,dickersog,Garrett Janning Dickerson,6,8,16,9,2
-12/5/18 13:23:49,65,riemannn,Nathaniel Christopher (Nathan) Riemann,8,2,16,15,9
-12/5/18 13:24:33,66,raminenia,Aadhyasri Ramineni,7,9,16,6,1
-12/5/18 13:36:51,67,pohla,Alexandra Marie Pohl,1,2,16,15,9
-12/5/18 13:42:42,68,yangy,Yuxi Yang,1,16,17,15,13
-0,69,lie,Enyi Li,3,1,10,6,16
-0,70,lul,Haotong Lu,0,0,0,0,0
-0,71,mastersomia,Mia Masterson,0,0,0,0,0
-0,72,schepero,Olivia Scheper,0,0,0,0,0
-0,73,samc,Colin Sam,0,0,0,0,0
-0,74,youngk,Kylan Young,0,0,0,0,0
-,,,,,,,,
-Seminar Name,Session #,Lecturer,,,,,,
-Adventure Calls: The Benefits and Challenges of Study Abroad,1,Gunnar Lykins (?15),,,,,,
-Be Your Own Boss: Entrepreneurship Opportunities in College and Beyond,2,Edwin Sam (?13),,,,,,
-Business Clubs: Campus Involvement and Professional Development,3,Blake Lykins (?18),,,,,,
-College Decisions: Choosing a Historically Black College over a Predominately White Institution,4,Liah Apatira (?18),,,,,,
-Community Organizing and College: Participating in Your College?s Democracy,5,Anna Beyette (?17),,,,,,
-Community Service and Volunteering: Making an Impact as a College Student,6,Nathan Grant (?16),,,,,,
-Conquering the Concrete Jungle,7,Madeleine Morales (?18),,,,,,
-Co-Ops and Engineering Internships: Gaining Professional Experience,8,Gunnar Lykins (?15),,,,,,
-Emergency Medical Technician: Working in the Back of an Ambulance,9,Grace Pettengill (?17),,,,,,
-Greek Life: From Animal House to Developing Tomorrow's Leaders,10,Blake Lykins (?18),,,,,,
-Making an Impact: Being a Leader in Student Government,11,Roshan Chandrakumar (?18),,,,,,
-On-Campus Recruiting and the Coveted Junior Year Internship in Finance,12,Mia Fatuzzo (?15),,,,,,
-So You Want to Play with Swords: Performance Martial Arts and Club Leadership,13,Claire Beyette (?15),,,,,,
-The Ins and Outs of Engineering Internships,14,Elizabeth Grace (?15),,,,,,
-The Road Less Traveled: Finding the Right Path for You,15,Ishan Ghildyal (?14),,,,,,
-Thriving in a Highly Competitive College Environment,16,Mia Fatuzzo (?15),,,,,,
-To Read or Not To Read? Interning in Publishing,17,Claire Beyette (?15),,,,,,
-What Is Research When It's Not a R‚sum‚ Builder?,18,Elizabeth Johnson (?17),,,,,,
+Pick Order,email22,name,session1,session2,session3,session4,session5
+1,phillipsc,Catherine M. Phillips,13,14,4,11,16
+2,lylem,Harrison (Miller) Lyle,7,1,2,6,18
+3,pfisterm,Grace (Morgan) Pfister,15,14,11,1,16
+4,chandrakru,Ruben Chandrakumar,5,2,11,3,15
+5,buechlyt,Anthony Jacob (Tony) Buechly,2,5,16,3,15
+6,taylors,Samuel Taylor,8,14,17,18,2
+7,fatuzzos,Stephen Holden Fatuzzo,1,9,16,7,2
+8,kellara,Ava Kellar,16,11,2,1,3
+9,kerschnee,Eric William Kerschner,9,18,2,13,6
+10,rame,Emily Marie Ram,2,15,3,1,18
+11,sullivanj,Jack Michael Kestner Sullivan,1,16,7,8,6
+12,yardleyo,Olivia Audrey Yardley,15,10,1,9,2
+13,boazk,Kayla M. Boaz,15,18,6,10,2
+14,thompsond,Dylan Niles Thompson,3,2,7,10,4
+15,valenk,Katherine Rhea Valen,15,1,7,9,2
+16,midham,Manav Dev Midha,2,12,6,16,15
+17,briggsm,Molly Molloy Briggs,15,10,1,18,16
+18,alberth,Herschel Morris Albert,1,12,3,2,9
+19,brants,Samantha Rose Brant,8,10,1,15,16
+20,zalantsv,Valen Irene Zalants,15,1,7,9,2
+21,shihn,Nellie Yushuan Shih,8,7,1,15,14
+22,webbc,Chloe Renee Webb,15,1,9,11,6
+23,williamsb,Bryon Michael Williamson,8,14,2,16,6
+24,wrightm,Margaret Langdon (Maggie) Wright,15,1,7,9,2
+25,reiringj,Jane (Janie) Reiring,15,1,7,9,2
+26,kellert,Victoria Louise (Tori) Keller,15,6,1,17,16
+27,stewarts,Sean Christopher Stewart,9,16,14,8,18
+28,farrelll,Lily Taylor Farrell,1,3,2,10,11
+29,westonf,Frank Weston,15,5,13,16,6
+30,hessh,Hannah Rose Hess,15,1,7,9,2
+31,snellst,Sterling Elijah Snell,9,15,13,1,16
+32,folanm,Maxwell Richard Folan,7,15,12,5,1
+33,hartenm,Mary C. Harten,1,15,10,18,2
+34,lutzm,Mia E. Lutz,15,1,7,9,16
+35,puckettt,Trevor B. Puckett,18,16,1,8,7
+36,rennerj,Jacob Renner,1,3,2,16,18
+37,settersk,Katelynn Renee Setters,1,3,2,9,11
+38,kovachh,Helen Kovach,1,18,15,16,6
+39,hoffmanl,Lindsey Renee Hoffman,15,1,9,7,14
+40,jeffriese,Ethan Mikal Jeffries,11,3,2,7,16
+41,goingsc,William (Chase) Goings,13,7,16,1,2
+42,straleyg,Grace Virginia Straley,7,1,16,6,15
+43,bakers,Sydney Renee Baker,15,1,8,6,14
+44,jaccacis,Samuel A. (Sam) Jaccaci,11,7,1,15,16
+45,gonzalese,Emily Susan Gonzales,7,1,6,15,16
+46,fleischme,Eric Robert Fleischmann,7,9,5,18,17
+47,taylorhu,Hunter Levi Taylor,2,7,3,15,1
+48,formana,Annabel August Forman,1,16,15,7,17
+49,maggarda,Abigail Maye (Abby) Maggard,15,1,9,7,17
+50,cercekg,Gavin L. Cercek,8,1,14,12,9
+51,mcneile,Emma Rachael McNeil,9,13,7,1,2
+52,hettingep,Paige E. Hettinger,9,1,10,2,6
+53,paynej,Joshua Jabez (Josh) Payne,8,2,13,14,18
+54,cordean,Nicholas William (Nick) Cordea,2,15,1,16,7
+55,hatcherm,Moseley Quinn (Mose) Hatcher,7,2,13,17,14
+56,smithn,Genevieve Claire (Nevie) Smith,15,1,2,6,7
+57,ellerj,Jeremy Eller,8,2,16,7,15
+58,mangur,Radha Venkata Mangu,7,2,16,15,18
+59,gersonn,Nathaniel Whitney (Nate) Gerson,6,15,16,2,1
+60,osborna,Andrew Pendleton (Andy) Osborn,2,9,1,12,15
+61,nguyenn,Nicholas Minh (Nick) Nguyen,3,10,7,2,1
+62,bursef,Francis Burse,2,3,9,7,16
+63,hamalla,Alec Daniel Hamall,6,9,1,15,2
+64,dickersog,Garrett Janning Dickerson,6,8,16,9,2
+65,riemannn,Nathaniel Christopher (Nathan) Riemann,8,2,16,15,9
+66,raminenia,Aadhyasri Ramineni,7,9,16,6,1
+67,pohla,Alexandra Marie Pohl,1,2,16,15,9
+68,yangy,Yuxi Yang,1,16,17,15,13
+69,lie,Enyi Li,3,1,10,6,16
+70,lul,Haotong Lu,0,0,0,0,0
+71,mastersomia,Mia Masterson,0,0,0,0,0
+72,schepero,Olivia Scheper,0,0,0,0,0
+73,samc,Colin Sam,0,0,0,0,0
+74,youngk,Kylan Young,0,0,0,0,0
