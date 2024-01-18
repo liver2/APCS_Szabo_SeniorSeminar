@@ -21,6 +21,20 @@ public class Main {
             System.out.println("An error occurred.");
         }
         
-        System.out.println(dataStrings);
+        for (String s : dataStrings) {
+            String[] construction = s.split(",");
+            students.add(new Student(
+                Integer.parseInt(construction[0]),
+                construction[1],construction[2],
+                Integer.parseInt(construction[3]),
+                Integer.parseInt(construction[4]),
+                Integer.parseInt(construction[5]),
+                Integer.parseInt(construction[6]),
+                Integer.parseInt(construction[7])));
+        }
+
+        for (Student s : students) {
+            
+        }
     }
 }
