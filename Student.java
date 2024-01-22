@@ -16,6 +16,10 @@ public class Student {
         idChoices[4] = c5;
     }
 
+    public int getChoices(int i) {
+        return idChoices[i];
+    }
+
     public String toString() {
         String r = "";
         r += "\nName: " + name + "\n";

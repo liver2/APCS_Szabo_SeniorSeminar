@@ -33,8 +33,26 @@ public class Main {
                 Integer.parseInt(construction[7])));
         }
 
-        for (Student s : students) {
-            
+        // 1. initialize each Seminar in schedule to a placeholder, to which Seminars can compare themselves
+
+        for (Student s : students) { // first choice loop
+            for (int i = 0; i < 5; i++) {
+                for (int j = 0; j < 5; j++) {
+                    if (schedule[i][j].getId() == s.getChoices(0)) {
+                        // place the student in the seminar that was found
+                    }
+                    if (schedule[i][j].placeholder()) {
+                        schedule[i][j] = new Seminar(s.getChoices(0));
+                        // place the student in the created seminar
+                    }
+                }
+            } // what if there are no more slots left and you're trying to put people in a seminar that has already been created?
+
+            // take the first student's first choice
+            // create a seminar as to the left as possible and place the student in it
+            // repeat for all students.
+            // CREATE A DEBUG MODE to see the schedule fully
+            // if there is no space available then || prioritize secon choice || place wherever space
         }
     }
 }
