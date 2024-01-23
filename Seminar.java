@@ -27,6 +27,10 @@ public class Seminar {
     public void addStudent(Student s) {
         students.add(s);
     }
+    
+    public int getRosterSize() {
+        return students.size();
+    }
 
     public String toString() {
         String r = "";

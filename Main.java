@@ -43,14 +43,11 @@ public class Main {
         for (Student s : students) { // first choice loop
             for (int i = 0; i < 5; i++) {
                 for (int j = 0; j < 5; j++) {
-                    if (schedule[i][j].getId() == s.getChoices(0)) {
+                    if (schedule[i][j].getId() == s.getChoices(0) && !(schedule[i][j].getRosterSize() == 16)) {
                         schedule[i][j].addStudent(s);
-                        break;
-                    }
-                    if (schedule[i][j].placeholder()) {
+                    } else if (schedule[i][j].placeholder()) {
                         schedule[i][j] = new Seminar(s.getChoices(0));
-                        schedule[i][j].addStudent(s);
-                        break;
+                        schedule[i][j].addStudent(s); // create a methods class to break more easily??
                         // place the student in the created seminar
                     }
                 }
@@ -63,6 +60,10 @@ public class Main {
             // if there is no space available then || prioritize secon choice || place wherever space
         }
 
-        System.out.println(schedule);
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                System.out.println(schedule[i][j]);
+            }
+        }
     }
 }
