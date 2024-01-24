@@ -5,18 +5,19 @@ public class Seminar {
     private int id;
     private int section;
     private Alum alumne;
+    private int timeOfDay;
     private ArrayList<Student> students = new ArrayList<Student>();
 
     // create seminar constructor based on id
     public Seminar(int i) {
         id = i;
-
+        timeOfDay = 0;
         // later: determine name, section, alumnus, etc. based on data
     }
 
     // create method to compare seminars to placeholder seminars to figure out if a seminar can be placed in a blank spot
     public boolean placeholder() {
-        if (id == 0) return true;
+        if (id == -1) return true;
         return false;
     }
 
@@ -37,5 +38,19 @@ public class Seminar {
         r += "ID: " + id + "\n";
         r += "# of students: " + students.size();
         return r;
+    }
+
+    public String tempGridDisplay() {
+        String r = "";
+        r += id + "|" + students.size() + "|" + timeOfDay + " ";
+        return r;
+    }
+
+    public void setTime(int i) {
+        timeOfDay = i;
+    }
+
+    public int getTime() {
+        return timeOfDay;
     }
 }
