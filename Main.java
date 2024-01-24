@@ -19,7 +19,7 @@ public class Main {
             }
             scan.close();
         } catch (FileNotFoundException e) {
-            System.out.println("An error occurred.");
+            System.out.println("A stupid error occurred.");
         }
         
         for (String s : dataStrings) {
