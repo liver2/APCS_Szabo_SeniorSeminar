@@ -11,8 +11,9 @@ public class Main {
         ArrayList<Student> students = new ArrayList<Student>();
 
         try {
-            File data = new File("actualSrSeminarData.csv");
-            Scanner scan = new Scanner(data);
+            System.out.println("Test");
+            File data2 = new File("actualSrSeminarData.csv");
+            Scanner scan = new Scanner(data2);
             scan.nextLine();
             while(scan.hasNextLine()) {
                 dataStrings.add(scan.nextLine());
