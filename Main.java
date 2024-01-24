@@ -11,8 +11,7 @@ public class Main {
         ArrayList<Student> students = new ArrayList<Student>();
 
         try {
-            System.out.println("Test");
-            File data2 = new File("actualSrSeminarData.csv");
+            File data2 = new File("plaindata.csv");
             Scanner scan = new Scanner(data2);
             scan.nextLine();
             while(scan.hasNextLine()) {
@@ -20,7 +19,7 @@ public class Main {
             }
             scan.close();
         } catch (FileNotFoundException e) {
-            System.out.println("A stupid error occurred.");
+            System.out.println("An error occurred.");
         }
         
         for (String s : dataStrings) {
