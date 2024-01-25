@@ -7,3 +7,5 @@ Approach: Those who filled out the survey first will be prioritized. The 5x5 arr
 January 18: Experimented with a "first-choice first" solution to optimization. created toString method and constructor for Student class. Imported student data into an arrayList. Goal for next class: write the algorithm to import Students into the seminar schedule grid.
 
 January 22: Went forward with the first loop of the "first-choice first" soluion. Created various methods for Student and Seminar classes to aid the process of placing the students in the seminar as students are proecssed with the algorithm. Thought about a system to prioritize holding high-popularity classes at different times (might start over with this method.)
+
+January 24: Ditched the first-choice first solution and used the "Collections" class to randomly shuffle the arraylist of students and run an optimization algorithm to find an "optimization score," saving the lowest one i find.
