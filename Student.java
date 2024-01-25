@@ -18,6 +18,9 @@ public class Student {
         for (int i = 0; i < 5; i++) {
             occupied[i] = 0;
         }
+        for (int i = 0; i < 5; i++) {
+            seminars[i] = new Seminar(-1);
+        }
     }
 
     public int getChoices(int i) {
@@ -30,11 +33,20 @@ public class Student {
         r += "Email: " + email + "\n";
         r += "Order: " + order + "\n";
         r += "Choices: " + idChoices[0] + "," + idChoices[1] + "," + idChoices[2] + "," + idChoices[3] + "," + idChoices[4] + "\n";
+        r += "Seminars: " + seminars[0].tempGridDisplay() + "," + 
+                            seminars[1].tempGridDisplay() + "," + 
+                            seminars[2].tempGridDisplay() + "," + 
+                            seminars[3].tempGridDisplay() + "," + 
+                            seminars[4].tempGridDisplay() + "\n";
         return r;
     }
 
     public void addSeminar(Seminar s, int i) {
         seminars[i] = s;
+    }
+
+    public Seminar getSeminar(int i) {
+        return seminars[i];
     }
 
     public int[] getOccupied() {
@@ -43,5 +55,14 @@ public class Student {
 
     public void setOccupied(int index, int value) {
         occupied[index] = value;
+    }
+
+    public String seminarToString() {
+        String r = "";
+        r += "List of seminars:\n";
+        for (int i = 0; i < seminars.length; i++) {
+            r += seminars[i].toString() + "\n";
+        }
+        return r;
     }
 }

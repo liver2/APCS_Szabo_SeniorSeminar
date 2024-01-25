@@ -55,5 +55,8 @@ public class Main {
             }
             System.out.println("");
         }
+
+        System.out.println(students.get(1));
+        System.out.println(scheduleOp.getOptimization());
     }
 }
