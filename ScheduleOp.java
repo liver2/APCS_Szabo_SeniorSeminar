@@ -32,9 +32,8 @@ public class ScheduleOp {
             }
             // if there is no space available then || prioritize secon choice || place wherever space
         }
-        // if (s.getOrder() < 70) {
-        //     System.out.println(s.toString() + "could not be given their " + (choice+1) + " choice");
-        // }
+        // System.out.println(s.toString() + "could not be given their " + (choice+1) + " choice");
+        
         if(s.getChoices(choice) != 0) {
             return (5-choice);
         }
@@ -42,13 +41,21 @@ public class ScheduleOp {
         return (0);
     }
 
-    public boolean arrCompare(int i, int[] j) { // returns true if 
-        for (int a = 0; a < j.length; a++) {
-            if (j[a] == i) {
-                return true;
-            } 
+    public int fill(Seminar[][] schedule, Student s) {
+        for (int i = 0; i < 5; i++) {
+            if (s.getSeminar(i).placeholder()) {
+                inner: // loop label
+                for (int j = 0; j < 5; j++) {
+                    if (schedule[i][j].getRosterSize() < 16) {
+                        schedule[i][j].addStudent(s);
+                        s.addSeminar(schedule[i][j], i); // i refers to index (time of day)
+                        s.setOccupied(schedule[i][j].getTime()-1,schedule[i][j].getTime());
+                        break inner;
+                    }
+                }
+            }
         }
-        return false;
+        return 1;
     }
 
     public int randomize() {
@@ -100,16 +107,20 @@ public class ScheduleOp {
             }
         }
 
+        for (Student s : students) {
+            fill(schedule, s);
+        }
+
+        for (Student s : students) {
+            System.out.println(s + "\n");
+        }
+
         System.out.println("");
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
                 System.out.print(schedule[i][j].tempGridDisplay());
             }
             System.out.println("");
-        }
-
-        for (Student s : students) {
-            System.out.println(s + "\n");
         }
         
         return optimization;
