@@ -32,7 +32,9 @@ public class ScheduleOp {
             }
             // if there is no space available then || prioritize secon choice || place wherever space
         }
-        // System.out.println(s.toString() + "could not be given their " + (choice+1) + " choice");
+        // if (s.getOrder() < 70) {
+        //     System.out.println(s.toString() + "could not be given their " + (choice+1) + " choice");
+        // }
         if(s.getChoices(choice) != 0) {
             return (5-choice);
         }
@@ -68,7 +70,7 @@ public class ScheduleOp {
             }
             scan.close();
         } catch (FileNotFoundException e) {
-            // System.out.println("An error occurred.");
+            System.out.println("An error occurred.");
         }
         
         for (String s : dataStrings) {
@@ -83,7 +85,7 @@ public class ScheduleOp {
                 Integer.parseInt(construction[7])));
         }
 
-        Collections.shuffle(students);
+        // Collections.shuffle(students);
 
         // 1. initialize each Seminar in schedule to a placeholder, to which Seminars can compare themselves
         for (int i = 0; i < 5; i++) {
@@ -91,8 +93,6 @@ public class ScheduleOp {
                 schedule[i][j] = new Seminar(-1);
             }
         }
-
-        // System.out.println(students);
         
         for (int i = 0; i < 5; i++) {
             for (Student s : students) {
@@ -100,15 +100,18 @@ public class ScheduleOp {
             }
         }
 
+        System.out.println("");
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
-                // System.out.print(schedule[i][j].tempGridDisplay());
+                System.out.print(schedule[i][j].tempGridDisplay());
             }
-            // System.out.println("");
+            System.out.println("");
         }
 
-        // System.out.println(students.get(1));
-        // System.out.println(getOptimization());
+        for (Student s : students) {
+            System.out.println(s + "\n");
+        }
+        
         return optimization;
     }
 }

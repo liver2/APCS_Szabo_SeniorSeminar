@@ -27,6 +27,10 @@ public class Student {
         return idChoices[i];
     }
 
+    public int getOrder() {
+        return order;
+    }
+
     public String toString() {
         String r = "";
         r += "\nName: " + name + "\n";
