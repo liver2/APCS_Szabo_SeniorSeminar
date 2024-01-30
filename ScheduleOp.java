@@ -2,6 +2,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Collections;
 
 public class ScheduleOp {
     int[] counter = new int[18];
@@ -31,7 +32,16 @@ public class ScheduleOp {
         }
     }
 
-    public int sort(Seminar[][] schedule, Student s, int choice) { // adapt algo for all five choices?
+    public boolean dupeCheck(Seminar sem, Student stu) {
+        for (int i = 0; i < 5; i++) {
+            if (sem.getId() == stu.getSeminar(i).getId()) {
+                return false; // duped!
+            }
+        }
+        return true; // not duped
+    }
+
+    public int sort(Seminar[][] schedule, Student s, int choice) {
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
                 if (schedule[i][j].getId() == s.getChoices(choice) && !(schedule[i][j].getRosterSize() == 16)) {
@@ -70,7 +80,7 @@ public class ScheduleOp {
             if (s.getSeminar(i).placeholder()) {
                 inner: // loop label
                 for (int j = 0; j < 5; j++) {
-                    if (schedule[i][j].getRosterSize() < 16) {
+                    if (schedule[i][j].getRosterSize() < 16 && dupeCheck(schedule[i][j],s)) {
                         schedule[i][j].addStudent(s);
                         s.addSeminar(schedule[i][j], i); // i refers to index (time of day)
                         s.setOccupied(schedule[i][j].getTime()-1,schedule[i][j].getTime());
@@ -95,7 +105,7 @@ public class ScheduleOp {
         if (!found1) {
             return "Student not found";
         }
-        
+
         return "";
     }
 
@@ -153,7 +163,7 @@ public class ScheduleOp {
 
         importAndPrintData();
 
-
+        
         for (Student s : students) {
             System.out.println(s + "\n");
         }
@@ -173,8 +183,7 @@ public class ScheduleOp {
             }
         }
         System.out.println();
-        
+
         return optimization;
     }
 }
-

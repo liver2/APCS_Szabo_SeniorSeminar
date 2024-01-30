@@ -59,7 +59,7 @@ public class Seminar {
 
     public String tempGridDisplay() {
         String r = "";
-        r += id + "";
+        r += id + "|" + students.size() + " ";
         return r;
     }
 
