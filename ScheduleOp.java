@@ -118,7 +118,7 @@ public class ScheduleOp {
         System.out.println("Master Schedule");
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
-                System.out.print(schedule[i][j].tempGridDisplay());
+                System.out.print(schedule[i][j].tempGridDisplay() + " ");
             }
             System.out.println("");
         }
