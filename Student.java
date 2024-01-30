@@ -34,6 +34,7 @@ public class Student {
     public String toString() {
         String r = "";
         r += "\nName: " + name + "\n";
+        r += "Email: " + email + "\n";
         r += "Seminars: " + seminars[0].tempGridDisplay() + "," + 
                             seminars[1].tempGridDisplay() + "," + 
                             seminars[2].tempGridDisplay() + "," + 
@@ -56,6 +57,10 @@ public class Student {
 
     public String getName() {
         return name;
+    }
+
+    public String getEmail() {
+        return email;
     }
 
     public void setOccupied(int index, int value) {

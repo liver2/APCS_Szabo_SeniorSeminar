@@ -6,6 +6,31 @@ import java.util.Scanner;
 public class ScheduleOp {
     int[] counter = new int[18];
 
+    ArrayList<Student> students = new ArrayList<Student>();
+
+    public void importAndPrintData() {
+        ArrayList<String> dataStrings =  new ArrayList<String>();
+
+        try {
+            File data = new File("lecturerData.csv");
+            Scanner scan = new Scanner(data);
+            scan.nextLine();
+            while(scan.hasNextLine()) {
+                dataStrings.add(scan.nextLine());
+            }
+            scan.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("Lecturer data file reading error");
+        }
+
+        System.out.println("Seminar ID's & Corresponding Names:");
+
+        for(String s : dataStrings) {
+            String[] construction = s.split(",");
+            System.out.println("ID " + construction[1] + " --> \"" + construction[0] + "\" with " + construction[2] + " \'" + construction[3]);
+        }
+    }
+
     public int sort(Seminar[][] schedule, Student s, int choice) { // adapt algo for all five choices?
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
@@ -57,10 +82,26 @@ public class ScheduleOp {
         return 1;
     }
 
+    public String search(String str) {
+        boolean found1 = false;
+        
+        for (Student s : students) {
+            if (s.getEmail().equals(str)) {
+                System.out.println(s.toString());
+                found1 = true;
+            }
+        }
+
+        if (!found1) {
+            return "Student not found";
+        }
+        
+        return "";
+    }
+
     public int randomize() {
         Seminar[][] schedule = new Seminar[5][5];
-        ArrayList<String> dataStrings = new ArrayList<String>();
-        ArrayList<Student> students = new ArrayList<Student>();
+        ArrayList<String> data2Strings = new ArrayList<String>();
 
         for (int i = 0; i < counter.length; i++) {
             counter[i] = 0;
@@ -72,14 +113,14 @@ public class ScheduleOp {
             Scanner scan = new Scanner(data2);
             scan.nextLine();
             while(scan.hasNextLine()) {
-                dataStrings.add(scan.nextLine());
+                data2Strings.add(scan.nextLine());
             }
             scan.close();
         } catch (FileNotFoundException e) {
             System.out.println("An error occurred.");
         }
         
-        for (String s : dataStrings) {
+        for (String s : data2Strings) {
             String[] construction = s.split(",");
             students.add(new Student(
                 Integer.parseInt(construction[0]),
@@ -109,6 +150,9 @@ public class ScheduleOp {
         for (Student s : students) {
             fill(schedule, s);
         }
+
+        importAndPrintData();
+
 
         for (Student s : students) {
             System.out.println(s + "\n");
