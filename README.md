@@ -11,3 +11,5 @@ January 22: Went forward with the first loop of the "first-choice first" soluion
 January 24: Ditched the first-choice first solution and used the "Collections" class to randomly shuffle the arraylist of students and run an optimization algorithm to find an "optimization score," saving the lowest one i find.
 
 January 26: wrote the "fill" function to fill in the students who could not get their choices or did not fill out the form. 
+
+January 30: debugged students who had duplicate sessions and didn't fill out the form.

@@ -84,7 +84,7 @@ public class ScheduleOp {
                         schedule[i][j].addStudent(s);
                         s.addSeminar(schedule[i][j], i); // i refers to index (time of day)
                         s.setOccupied(schedule[i][j].getTime()-1,schedule[i][j].getTime());
-                        break inner;
+                        break inner;                        
                     }
                 }
             }
