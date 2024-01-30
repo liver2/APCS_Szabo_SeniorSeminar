@@ -115,12 +115,20 @@ public class ScheduleOp {
         }
 
         System.out.println("");
+        System.out.println("Master Schedule");
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
                 System.out.print(schedule[i][j].tempGridDisplay());
             }
             System.out.println("");
         }
+
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                System.out.println(schedule[i][j].toString());
+            }
+        }
+        System.out.println();
         
         return optimization;
     }

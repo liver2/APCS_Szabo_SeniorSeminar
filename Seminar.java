@@ -33,16 +33,9 @@ public class Seminar {
         return students.size();
     }
 
-    public String toString() {
-        String r = "";
-        r += "ID: " + id + "\n";
-        r += "# of students: " + students.size();
-        return r;
-    }
-
     public String tempGridDisplay() {
         String r = "";
-        r += id + "|" + students.size() + "|" + timeOfDay + " ";
+        r += id + " ";
         return r;
     }
 
@@ -52,5 +45,17 @@ public class Seminar {
 
     public int getTime() {
         return timeOfDay;
+    }
+
+    public String toString() {
+        String r = "";
+        r += "Seminar ID: " + id + "\n";
+        r += "Seminar Block #: " + timeOfDay + "\n\n";
+        r += "Student Names:\n";
+        for (Student s : students) {
+            r += s.getName() + "\n";
+        }
+        System.out.println();
+        return r;
     }
 }

@@ -34,14 +34,11 @@ public class Student {
     public String toString() {
         String r = "";
         r += "\nName: " + name + "\n";
-        r += "Email: " + email + "\n";
-        r += "Order: " + order + "\n";
-        r += "Choices: " + idChoices[0] + "," + idChoices[1] + "," + idChoices[2] + "," + idChoices[3] + "," + idChoices[4] + "\n";
         r += "Seminars: " + seminars[0].tempGridDisplay() + "," + 
                             seminars[1].tempGridDisplay() + "," + 
                             seminars[2].tempGridDisplay() + "," + 
                             seminars[3].tempGridDisplay() + "," + 
-                            seminars[4].tempGridDisplay() + "\n";
+                            seminars[4].tempGridDisplay() + "";
         return r;
     }
 
@@ -55,6 +52,10 @@ public class Student {
 
     public int[] getOccupied() {
         return occupied;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public void setOccupied(int index, int value) {
