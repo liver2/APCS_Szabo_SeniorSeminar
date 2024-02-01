@@ -3,6 +3,16 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/*
+ * The main algorithm, which places students into the schedule with the lowest optimization score possible.
+ */
+
+/**
+* ScheduleOp.java 
+* Author: Oliver Szabo
+* Date: February 5, 2023, 11:59 PM
+* Purpose: The main algorithm, which places students into the schedule with the lowest optimization score possible.
+*/
 public class ScheduleOp 
 {
     int[] counter = new int[18]; // Counts # of sections per Seminar (hence size: 18)

@@ -1,5 +1,17 @@
 import java.util.Scanner;
 
+/*
+ * Contains the main method, a disclaimer for students who did not fill out the form, 
+ * initializes a ScheduleOp object which runs the optimization, and operates the search module.
+ */
+
+/**
+* Main.java 
+* Author: Oliver Szabo
+* Date: February 5, 2023, 11:59 PM
+* Purpose: Contains the main method, a disclaimer for students who did not fill out the form, 
+* initializes a ScheduleOp object which runs the optimization, and operates the search module.
+*/
 public class Main 
 {
     public static void main(String[] args) 

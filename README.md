@@ -13,3 +13,9 @@ January 24: Ditched the first-choice first solution and used the "Collections" c
 January 26: wrote the "fill" function to fill in the students who could not get their choices or did not fill out the form. 
 
 January 30: debugged students who had duplicate sessions and didn't fill out the form.
+
+---
+
+Date: 2/5/2024
+
+Final Summary: A program that arranges a schedule for a "Senior Seminar" enrichment day at the Cincinnati Country Day school given the results of a survey, where the students were told to pick their top 5 choices from a list of seminars. Under this schedule, students on average were denied either their fourth or fifth choice (equal probability), and received all of their other choices.

@@ -1,3 +1,15 @@
+/*
+ * A class to store data about students, their identifying information, their Seminar choices, and
+ * those in which they are actually enrolled. Used heavily in the ScheduleOp class to optimize the schedule.
+ */
+
+/**
+* Student.java 
+* Author: Oliver Szabo
+* Date: February 5, 2023, 11:59 PM
+* Purpose: A class to store data about students, their identifying information, their Seminar choices, and
+* those in which they are actually enrolled. Used heavily in the ScheduleOp class to optimize the schedule.
+*/
 public class Student 
 {
     private String name;

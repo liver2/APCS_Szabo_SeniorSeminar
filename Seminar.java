@@ -3,6 +3,16 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/*
+ * A class that initializes and matches Seminars to the Seminar-ID key found in lecturerData.csv and stores rosters of Student objects.
+ */
+
+/**
+* Seminar.java 
+* Author: Oliver Szabo
+* Date: February 5, 2023, 11:59 PM
+* Purpose: A class that initializes and matches Seminars to the Seminar-ID key found in lecturerData.csv and stores rosters of Student objects.
+*/
 public class Seminar 
 {
     private String name;
@@ -28,7 +38,7 @@ public class Seminar
             {
                 dataStrings.add(scan.nextLine());
             }
-            
+
             scan.close();
         } 
         catch (FileNotFoundException e) 
