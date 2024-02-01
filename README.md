@@ -14,6 +14,8 @@ January 26: wrote the "fill" function to fill in the students who could not get 
 
 January 30: debugged students who had duplicate sessions and didn't fill out the form.
 
+February 1: Added Javadocs, Multiline comments, and a screenshot of the search function running.
+
 ---
 
 Date: 2/5/2024
