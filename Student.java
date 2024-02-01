@@ -23,6 +23,11 @@ public class Student
     private Seminar[] seminars = new Seminar[5];
     private int[] occupied = new int[5]; // Keeps track of when a student's schedule is filled by a Seminar: Used in the "randomize" placing algorithm.
 
+    /*
+     * Constructor for the Student class.
+     * Returns: new Student (creates a new Student)
+     * Arguments: int o,String e,String n,int c1,int c2,int c3,int c4,int c5 (Shorthand for future variable values.)
+     */
     public Student(int o,String e,String n,int c1,int c2,int c3,int c4,int c5) 
     {
         name = n;
@@ -46,46 +51,91 @@ public class Student
         }
     }
 
+    /*
+     * Simple getter for an array's element.
+     * Returns: int idChoices[i]
+     * Arguments: int i (index)
+     */
     public int getChoices(int i) 
     {
         return idChoices[i];
     }
 
+    /*
+     * Simple getter.
+     * Returns: int order
+     * Arguments: None
+     */
     public int getOrder() 
     {
         return order;
     }
 
+    /*
+     * Simple getter for an array's element.
+     * Returns: int seminars[i]
+     * Arguments: int i (index)
+     */
     public Seminar getSeminar(int i) 
     {
         return seminars[i];
     }
 
+    /*
+     * Simple getter for an array.
+     * Returns: int[] occupied
+     * Arguments: None
+     */
     public int[] getOccupied() 
     {
         return occupied;
     }
 
+    /*
+     * Simple getter.
+     * Returns: String name
+     * Arguments: None
+     */
     public String getName() 
     {
         return name;
     }
 
+    /*
+     * Simple getter.
+     * Returns: String email
+     * Arguments: None
+     */
     public String getEmail() 
     {
         return email;
     }
 
+    /*
+     * Simple setter for an array. Admittedly poorly named.
+     * Returns: void
+     * Arguments: Seminar s, int i (adds a new Seminar s to the seminars[] array at index i)
+     */
     public void addSeminar(Seminar s, int i) 
     {
         seminars[i] = s;
     }
 
+    /*
+     * Simple setter for an array.
+     * Returns: void
+     * Arguments: int index, int value (sets occupied[index] to value.)
+     */
     public void setOccupied(int index, int value) 
     {
         occupied[index] = value;
     }
 
+    /*
+     * toString method which displays the Student's name, email, and seminars.
+     * Returns: String r (for use with System.out.print-type functions)
+     * Arguments: none
+     */
     public String toString() 
     {
         String r = "";

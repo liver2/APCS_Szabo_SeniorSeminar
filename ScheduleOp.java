@@ -16,9 +16,13 @@ import java.util.Scanner;
 public class ScheduleOp 
 {
     int[] counter = new int[18]; // Counts # of sections per Seminar (hence size: 18)
-
     ArrayList<Student> students = new ArrayList<Student>(); // Encompasses both students who have not been loaded into the Seminar system yet and those who have
 
+    /*
+     * Searches for a student according to str, which is meant to be a user-inputted value corresponding to the student's email prefix.
+     * Returns: String (toString of the student which was searched, or an error message that the student could not be found)
+     * Arguments: String str (value inputted by user)
+     */
     public String search(String str) 
     {
         boolean found1 = false; // Acts as a "toggle" to determine whether to print "Student not found"
@@ -40,6 +44,11 @@ public class ScheduleOp
         return "";
     }
 
+    /*
+     * Prints the Seminar-ID legend, so that Master Schedules and Student Schedules are more readable.
+     * Returns: void
+     * Arguments: none
+     */
     public void importAndPrintData() 
     { 
         ArrayList<String> dataStrings =  new ArrayList<String>();
@@ -71,6 +80,11 @@ public class ScheduleOp
         }
     }
 
+    /*
+     * Checks whether or not the Student is about to be placed into a Seminar which they have already been registered for (two sections of the same Seminar.)
+     * Returns: boolean (false == the student is about to have a duplicate session, true == the student is not about to have have a duplicate session)
+     * Arguments: String str (value inputted by user)
+     */
     public boolean dupeCheck(Seminar sem, Student stu) 
     {
         for (int i = 0; i < 5; i++) 
@@ -83,6 +97,11 @@ public class ScheduleOp
         return true;
     }
 
+    /*
+     * Sorts a student into the schedule according to their choices. (two sections of the same Seminar.)
+     * Returns: int (a value to be added to the optimization score)
+     * Arguments: Seminar[][] schedule, Student s, int choice (a student's choice according to which the program will attempt to place them )
+     */
     public int sort(Seminar[][] schedule, Student s, int choice) 
     {
         for (int i = 0; i < 5; i++) 
@@ -122,6 +141,11 @@ public class ScheduleOp
         return 0; // Those whose choices are 0 do not affect the optimization score
     }
 
+    /*
+     * Fills students who did not fill out the form or did not get their choices into the schedule.
+     * Returns: void
+     * Arguments: Seminar[][] schedule, Student s (the schedule and student on which the fill function is to operate)
+     */
     public void fill(Seminar[][] schedule, Student s) 
     {
         for (int i = 0; i < 5; i++) 
@@ -143,6 +167,11 @@ public class ScheduleOp
         }
     }
 
+    /*
+     * Uses the functions declared and written above to place students into the schedule, printing individual schedules, a master schedule, and Seminar rosters.
+     * Returns: int (optimiation score)
+     * Arguments: none
+     */
     public int randomize() 
     {
         Seminar[][] schedule = new Seminar[5][5];

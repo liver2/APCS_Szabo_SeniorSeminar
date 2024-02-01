@@ -14,6 +14,11 @@ import java.util.Scanner;
 */
 public class Main 
 {
+    /*
+     * Main method, which houses the search module and a ScheduleOp object.
+     * Returns: void
+     * Arguments: String[] args
+     */
     public static void main(String[] args) 
     {
         System.out.println("For students who did not fill out the form, a Seminar ID of \"-1\" indicates we were unable to place the student in a Seminar."); 

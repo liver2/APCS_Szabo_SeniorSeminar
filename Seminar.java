@@ -20,6 +20,11 @@ public class Seminar
     private int timeOfDay;
     private ArrayList<Student> students = new ArrayList<Student>();
 
+    /*
+     * Constructor for the Seminar class, which initializes name according to a single argument.
+     * Returns: new Seminar (creates a new Seminar)
+     * Arguments: int i (Shorthand for ID of new Seminar.)
+     */
     public Seminar(int i) 
     {
         ArrayList<String> dataStrings =  new ArrayList<String>(); // Used to import and sort data, matching int i to correct ID and name
@@ -57,37 +62,72 @@ public class Seminar
         }
     }
 
+    /*
+     * Simple getter.
+     * Returns: int id
+     * Arguments: None
+     */
     public int getId() 
     {
         return id;
     }
 
+    /*
+     * Simple getter.
+     * Returns: int timeOfDay
+     * Arguments: None
+     */
     public int getTime() 
     {
         return timeOfDay;
     }
 
+    /*
+     * Simple getter for the ArrayList students's size.
+     * Returns: int students.size()
+     * Arguments: None
+     */
     public int getRosterSize() 
     {
         return students.size();
     }
 
+    /*
+     * Simple setter for the Seminar's time.
+     * Returns: void
+     * Arguments: int i (value)
+     */
     public void setTime(int i) 
     {
         timeOfDay = i;
     }
 
+    /*
+     * Simple setter to add a student to the ArrayList.
+     * Returns: void
+     * Arguments: Student s (new student which is to be added)
+     */
     public void addStudent(Student s) 
     {
         students.add(s);
     }
 
+    /*
+     * Determines whether the Seminar object is acting as a placeholder.
+     * Returns: boolean
+     * Arguments: None
+     */
     public boolean placeholder() 
     {
         if (id == -1) return true;
         return false;
     }
 
+    /*
+     * A String method for use in the Master Schedule and Student Schedules.
+     * Returns: String form of id
+     * Arguments: None
+     */
     public String tempGridDisplay() 
     {
         String r = "";
@@ -95,6 +135,11 @@ public class Seminar
         return r;
     }
 
+    /*
+     * A String method for use in the Seminar rosters.
+     * Returns: String
+     * Arguments: None
+     */
     public String toString() 
     {
         String r = "";
