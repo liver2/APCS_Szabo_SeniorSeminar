@@ -100,9 +100,9 @@ public class ScheduleOp
                         return 0; // Later added to optimization score (Student on which this function is working got their choice, so 0 optimization points are added. Lower is better)
                     }
                 } 
-                else if (s.getSeminar(i).placeholder() && s.getChoices(choice) != 0) // Conditional to create new Seminar
+                else if (schedule[i][j].placeholder() && s.getChoices(choice) != 0) // Conditional to create new Seminar
                 {   
-                    if (s.getSeminar(i).getId() == -1 && !(counter[s.getChoices(choice)-1] == 2)) 
+                    if (s.getSeminar(i).placeholder() && !(counter[s.getChoices(choice)-1] == 2)) 
                     {
                         schedule[i][j] = new Seminar(s.getChoices(choice));
                         schedule[i][j].setTime(i+1); // Index at 1 (first period is 1, second period is 2, etc).
@@ -200,7 +200,7 @@ public class ScheduleOp
         {
             for (Student s : students) 
             {
-                optimization += sort(schedule, s,i);
+                optimization += sort(schedule,s,i);
             }
         }
 
